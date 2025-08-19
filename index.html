@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Co. Habitat — Ecological Design + Build</title>
+  <meta name="description" content="Co. Habitat — Nordic minimalist, bio-based, regenerative design-build."/>
+  <style>
+    :root{--teal:#19A6A3;--accent:#0F766E;--text:#111827;--muted:#4B5563;--bg:#fff;--r:16px}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    img,svg{max-width:100%;height:auto}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(255,255,255,.9);border-bottom:1px solid #e5e7eb;z-index:10}
+    .nav{display:flex;align-items:center;gap:24px;padding:14px 24px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .name{font-weight:800;letter-spacing:2px;font-size:18px}
+    .tag{color:var(--muted);font-size:10px;letter-spacing:2px;text-transform:uppercase}
+    .nav-links{margin-left:auto;display:flex;gap:12px;flex-wrap:wrap}
+    .nav-links a{padding:8px 12px;border-radius:12px}
+    .nav-links a:hover{background:#F3F4F6}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;padding:48px 24px}
+    .panel{background:#fff;border:1px solid #e5e7eb;border-radius:var(--r);padding:24px;box-shadow:0 10px 20px rgba(0,0,0,.04)}
+    .hero h1{font-size:42px;line-height:1.05;margin:0 0 12px}
+    .hero p{color:var(--muted);font-size:18px;margin:0 0 20px}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:#fff;padding:12px 16px;border-radius:999px;border:0}
+    .cta:hover{filter:brightness(.95)}
+    .badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+    .badge{border:1px solid #e5e7eb;border-radius:999px;padding:6px 10px;color:var(--muted);font-size:12px}
+    .section{padding:56px 24px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:var(--r);padding:18px;box-shadow:0 6px 16px rgba(0,0,0,.04)}
+    .card h3{margin:8px 0;font-size:18px}.card p{color:var(--muted);margin-top:0}
+    .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .gallery .tile{border-radius:12px;border:1px solid #e5e7eb;background:#fff;padding:18px;display:flex;align-items:center;justify-content:center;height:220px;color:#6B7280}
+    .footer{border-top:1px solid #e5e7eb;padding:24px;font-size:14px;color:var(--muted)}
+    .footer-inner{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .kicker{text-transform:uppercase;font-size:12px;letter-spacing:2px;color:var(--muted)}
+    h2.section-title{font-size:28px;margin:0 0 12px}
+    .btn-outline{display:inline-block;padding:10px 14px;border-radius:999px;border:1px solid var(--accent);color:var(--accent)}
+    .btn-outline:hover{background:#ECFEFF}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Co. Habitat home">
+        <!-- Inline logo (teal triangular A + wordmark + tagline) -->
+        <svg width="48" height="48" viewBox="0 0 200 200" aria-hidden="true">
+          <polygon points="100,20 30,180 170,180" fill="#19A6A3"/>
+          <polygon points="100,50 65,150 135,150" fill="#ffffff"/>
+        </svg>
+        <div>
+          <div class="name">CO.HABITAT</div>
+          <div class="tag">ECOLOGICAL DESIGN + BUILD</div>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="panel">
+        <div class="kicker">Ecological Design + Build</div>
+        <h1>Nordic‑minimalist, bio‑based buildings for healthier habitats.</h1>
+        <p>We design and build small structures and retrofits using mass timber, stone, and plant‑based insulation. Durable. Repairable. Low‑tox. Beautiful.</p>
+        <div class="badges">
+          <span class="badge">Mass timber</span>
+          <span class="badge">Hemp & reed insulation</span>
+          <span class="badge">Material passports</span>
+          <span class="badge">Low embodied carbon</span>
+        </div>
+        <p><a class="cta" href="#contact">Start a project →</a></p>
+      </div>
+      <div class="panel">
+        <!-- Inline hero -->
+        <svg viewBox="0 0 1440 720" aria-label="Co. Habitat hero">
+          <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#19A6A3"/><stop offset="100%" stop-color="#0F766E"/></linearGradient></defs>
+          <rect width="1440" height="720" fill="url(#g)"/>
+          <g transform="translate(420,120)" opacity="0.25">
+            <polygon points="300,0 0,540 600,540" fill="#fff"/>
+            <polygon points="300,60 120,480 480,480" fill="#0F766E" opacity="0.25"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title">About</h2>
+      <p>We build quiet, durable spaces with nature‑forward materials. Hybrid systems — mass timber, stone, and plant‑based insulation — designed for long service life and easy repair.</p>
+      <div class="grid-3">
+        <div class="card"><h3>Material Honesty</h3><p>Local stone, mass timber, and plant fibers — no fake wood, minimal synthetics.</p></div>
+        <div class="card"><h3>Repair & Reuse</h3><p>Dry‑assembled layers with material passports for maintenance and circularity.</p></div>
+        <div class="card"><h3>Right‑Sized</h3><p>Comfortable, modest footprints guided by sufficiency and long‑term stewardship.</p></div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2 class="section-title">Services</h2>
+      <div class="grid-3">
+        <div class="card"><h3>Concept & Feasibility</h3><p>Site and zoning checks, options, early pricing, timelines.</p></div>
+        <div class="card"><h3>Design & Documentation</h3><p>Permit‑ready drawings, scope, and material passports.</p></div>
+        <div class="card"><h3>Build & Install</h3><p>Prefab shell delivery or on‑site builds with vetted suppliers.</p></div>
+      </div>
+      <div class="card" style="margin-top:18px;">
+        <h3 style="margin:0 0 6px;">Typical price ranges (CAD)</h3>
+        <ul style="margin:0;padding-left:18px;color:#4B5563;">
+          <li><strong>Backyard Studio Shell (10–20 m²):</strong> $25,000–$60,000</li>
+          <li><strong>Sauna (6–12 m²):</strong> $18,000–$40,000</li>
+          <li><strong>Natural Retrofit (per m² of wall):</strong> $200–$500</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="gallery">
+        <div class="tile">Backyard studio concept</div>
+        <div class="tile">Sauna detail</div>
+        <div class="tile">Retrofit assembly</div>
+        <div class="tile">Hybrid wall section</div>
+        <div class="tile">Material palette</div>
+        <div class="tile">Site plan</div>
+        <div class="tile">Interior render</div>
+        <div class="tile">Envelope detail</div>
+        <div class="tile">Prototype shell</div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact</h2>
+      <p>Tell us about your site, goals, and timeline. We’ll reply with next steps and an initial call.</p>
+      <p><a class="cta" href="mailto:hello@cohabitat.example">Email us →</a></p>
+      <p class="tag" style="margin-top:8px;">(I can swap in your real email on this button—say the word.)</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© CO.HABITAT — ECOLOGICAL DESIGN + BUILD</div>
+      <div><a class="btn-outline" href="#" onclick="alert('Brand pack coming soon.');return false;">Download Brand Pack</a></div>
+    </div>
+  </footer>
+</body>
+</html>
